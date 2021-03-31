@@ -31,9 +31,9 @@ const StartMessage = "Rest API v0.1 - To Do Items"
 func main() {
 	logger("API working!")
 	ToDoItemList = []ToDoItem{
-		{ID: 1, Status: false, Description: "Description1", Date: time.Now().UnixNano()},
-		{ID: 2, Status: true, Description: "Description2", Date: time.Now().UnixNano()},
-		{ID: 3, Status: true, Description: "Description3", Date: time.Now().UnixNano()},
+		{ID: 1, Status: false, Description: "Description1", Date: time.Now().Unix()},
+		{ID: 2, Status: true, Description: "Description2", Date: time.Now().Unix()},
+		{ID: 3, Status: true, Description: "Description3", Date: time.Now().Unix()},
 	}
 	handleRequests()
 }
